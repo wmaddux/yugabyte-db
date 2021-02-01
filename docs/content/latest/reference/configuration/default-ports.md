@@ -48,13 +48,13 @@ Admin web server UI can be viewed at these addresses.
 ## Firewall Rules
 Along with the above, include the following common ports in firewall rules. 
 
-| Service     | Port
+| Service     | Port |
 | ------- | ------------------------- |
-| SSH    | `tcp:22` |
-| HTTP   | `tcp:80` |
-| HTTPS   | `tcp:443` |
-| HTTP (alternate)   | `tcp:8080` |
-| HTTP (Replicated)    | `tcp:8800` |
+| SSH    | 22 |
+| HTTP   | 80 |
+| HTTPS   | 443 |
+| HTTP (alternate)   | 8080 |
+| HTTP (Replicated)    | 8800 |
 
 ## Prometheus monitoring
 
@@ -64,7 +64,7 @@ YugabyteDB servers expose time-series performance metrics in the [Prometheus exp
 <target>/prometheus-metrics
 ```
 
-Following is the list of targets available.
+You can access the Prometheus server on port `9090`, and you can see the list of targets at the `http://<yugaware-ip>:9090/targets`. In particular, note port `93000` for node level metrics.
 
 ### Servers
 
